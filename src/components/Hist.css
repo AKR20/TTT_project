@@ -26,7 +26,7 @@
 
 .hist:hover {
   transform: scale(1.05);
-  background: linear-gradient(to bottom, #bcd8f5, #d6e2f6);
+  background: linear-gradient(to bottom, #88b9ee, #d6e2f6);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-color: #043e81;
 }
@@ -54,7 +54,8 @@
   cursor: grab;
   height: 40px;
   width: 168px;
-  font-weight: bold;
+  font-weight: 550;
+  color: #0b0b0b;
 }
 
 .downBut-button:hover {
