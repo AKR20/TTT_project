@@ -1,0 +1,95 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  background: linear-gradient(to bottom right, #ffffff, #87d2f4);
+  background-attachment: fixed;
+}
+
+.hist {
+  width: 60%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f1f1f1, #9ddcf5);
+  border: 1px solid #888585;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-top: 110px;
+}
+
+.hist:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to bottom, #bcd8f5, #d6e2f6);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-color: #043e81;
+}
+
+.histogram-canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.downBut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.downBut-button {
+  background: linear-gradient(to bottom, #549ef2, #84dcf9);
+  color: #fff;
+  border: #080808;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: grab;
+  height: 40px;
+  width: 168px;
+  font-weight: bold;
+}
+
+.downBut-button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-color: #0b0b0b;
+  background: linear-gradient(to bottom, #23f11c, #c7f8c5);
+  width: 200px;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 13px;
+}
+
+.downBut-button:focus {
+  outline: none;
+}
+
+.downBut-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #0050a0, #001a40);
+}
+
+.downBut-text {
+  display: block;
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+  line-height: 0;
+}
+
+.downBut-button,
+.downBut-text {
+  display: block;
+  margin: 5px 0;
+  padding-bottom: 20px;
+}
